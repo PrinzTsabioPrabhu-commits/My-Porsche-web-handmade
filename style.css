@@ -1,0 +1,522 @@
+ body {
+    padding: 0;
+    margin: 0;
+ }
+
+ .navbar {
+    background: linear-gradient(90deg, #ffffff, #ffffff);;
+    padding: 0.8rem 1rem;
+ }
+
+ .navbar a{
+    color: rgb(0, 0, 0) !important;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: color 0.3s ease;
+    transition: 0.3s;
+ }
+
+ .navbar a:hover{
+    color: #7b7b7b !important;
+    border-radius: 400px;
+    font-style: normal;
+    transition: 0.4s ;
+ }
+
+ .navbar-brand{
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+ }
+
+  
+  
+
+.section-bg-light{
+    height: 100vh;
+    background:#bdbcbc;
+}
+
+.section-bg-gray{
+    height: 100vh;
+    background:#ffff !important;
+}
+
+.section-bg-dark{
+    height: 100vh;
+    background: #e4e5e7;
+}
+
+.hamburger{
+    display: none;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.nav-links{
+    display: flex;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links{
+        display: none !important;
+        flex-direction: column;
+        background: linear-gradient(90deg, #ffffff, #ffffff);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex !important;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+
+    nav>.container>ul>li{
+        transition: 0.1s;
+    }
+
+    nav>.container>ul>li:hover{
+        transition: 0.3s;
+        background-color: #302424;
+        border-radius: 5px;
+    }
+
+
+    .logo1{
+        justify-content: center;
+    }
+
+    .tulisan{
+        display: none;
+    }
+
+
+}
+
+
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 60 px 0;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #212529;
+    line-height: 1.6;
+}
+
+.hero .btn {
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover{
+    background: #a09595;
+    border: 2px;
+    color: #090909;
+    transform: translateY(-3px);
+    box-shadow: 10px 6px 18px rgba(13, 110, 253, 0.3);
+}
+
+@media(max-width: 992px){
+    .hero{
+        text-align: center;
+    }
+    .hero .hero-img{
+        margin-top: 30px;
+    }
+    .hero h1{
+        font-size: 2.2rem;
+    }
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .tombol{
+        font-size: small;
+    }
+
+    .tombol:hover{
+        font-size: medium;
+    }
+
+    .logo1 {
+        left: 18%;
+        height: 90px;
+    }
+
+}
+
+.about {
+    background: #f8f9fa;
+    color: #333;
+}
+
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #212529 !important; 
+}
+
+.about h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.about p{
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.btn about{
+    background: #4f12f7;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3 ease;
+}
+
+.btn-about:hover{
+    background: rgb(39, 39, 39);
+    color: white !important;
+    transform: rotateY(-6px);
+    box-shadow: 0 6px 18px rgba(13, 110, 253, 0.3);
+    transition: 0.3s;
+}
+
+
+
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3400ef;
+}
+
+.team-card{
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+    background: rgb(74, 73, 73);
+    transition: 0.3s;
+}
+
+.team-card:hover{
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease ;
+    color: rgb(255, 250, 250) !important;
+    background: rgb(39, 39, 39);
+    transition: 0.3s;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.team-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) ;
+}
+
+
+.team-img2{
+    width: 15rem;
+    height: 150px;
+    object-fit: cover;
+    border: none;
+    border-radius: 11px;
+}
+
+
+
+/* ======== CSS Untuk Section Services ======= */
+
+#service{
+    background: #f8f9fa;
+}
+
+#service .service-card{
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    background: whitesmoke;
+    transition: 0.3s;
+}
+
+#service .service-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15) !important;
+    color: wheat !important;
+    background: rgb(39, 39, 39);
+    transition: 0.3s;
+}
+
+
+#service .icon i{
+    transition: color  0.3s ease, transform 0.3s ease;
+}
+
+#service .service-card:hover .icon i{
+    color: #0d6efd;
+    transform: scale(1.2);
+}
+
+
+
+
+.tombol{
+    text-decoration: none;
+    border-radius: 70px;
+    color: rgb(0, 0, 0);
+    font-family:  bold system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    transition: 0.4s;    
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: 10px;
+    font-size: 15px;
+}
+.tombol:hover{
+    background: #a09595;
+    color: #e9ecef;
+    font-size: medium;
+    font-style: normal;
+    transform: translateY(-8px);
+    font-weight: 400;
+    transition: 0.4s;
+} 
+
+
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+
+.logo{
+     /*display: flex;
+    position: absolute;
+    top: 10px;
+    left: 4%;
+*/
+    height: 100px;
+    width: 80px;
+    size: 100px;
+}
+
+.logo:hover{
+    size: 60px;
+}
+
+
+.logo1{
+    height: 60px;
+    width: 100px;
+    size: 80px;
+}
+
+
+.logo2{
+    height: 100px;
+    width: 90px;
+    size: 100px;
+}
+
+
+image{
+    display: flex;
+    height: 15px;
+    width: 40px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+.container2{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+} 
+
+
+
+
+.project-card {
+    background-color:#2b2b2d ;
+    width: 90rem;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+.projects-grid2 {
+    display: flex;
+    gap: 3rem;
+    padding: 70;
+}
+
+
+
+.projects-grid {
+    display: flex;
+    gap: 3rem;
+}
+
+
+.project-card {
+    background-color:#2b2b2d;
+    width: 90rem;
+    color: white;
+    border-radius: 7px;
+    transition: 0.4s;
+}
+
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+
+.project-card:hover {
+    transform: translateY(-20px);
+    background-color: red ;
+    color: black;
+    width: 90rem;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+
+.model-about{
+    transition: 0.3s;
+}
+
+.model-about:hover{
+    transform: translateY(-6px);
+    transition: 0.3s;
+}
+ 
+.tulisan{
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.tulisan:hover{
+    color: rgb(113, 90, 90) ;
+    transition: 0.3s;
+}
+
+.tulisan2{
+    text-decoration: none;
+    color: #ff0000;
+    transition: 0.3s;
+}
+
+.tulisan2:hover{
+    color: rgb(218, 0, 0) ;
+    transition: 0.3s;
+}
+
+
+.tulisan3{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.tulisan3:hover{
+    color: rgb(145, 145, 145) ;
+    transition: 0.3s;
+}
+
+
+.tulisan4{
+    text-decoration: none  ;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.tulisan4:hover{
+    color: rgb(214, 173, 173) ;
+    transition: 0.3s;
+}
+
+
+ 
+
+
+#tombolAksi {
+    transition: 0.3s;
+    padding: 15px 30px;
+    background-color: #535353; /* Merah cerah */
+    color: rgb(255, 255, 255);
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+ }
+
+ #tombolAksi:hover{
+    transition: 0.3s;
+    color: #b8b2b2;
+ }
+        
+ #tombolAksi.active {
+    /* Perubahan Properti CSS yang dianimasikan */
+    transform: scale(1.2) rotate(5deg); /* Memperbesar 20% dan memutar 10 derajat */
+    box-shadow: 0 8px 15px rgba(255, 111, 97, 0.6);
+ }
+
+
+
+
+
+  
+
+         
