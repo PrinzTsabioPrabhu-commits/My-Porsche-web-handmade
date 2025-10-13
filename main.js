@@ -46,12 +46,34 @@
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-      setTimeout(() => {
-        document.getElementById("puzzle-loader").classList.add("fade-out");
-        setTimeout(() => {
-          document.getElementById("puzzle-loader").style.display = "none";
-          document.body.style.overflow = "auto";
-        }, 1000);
-      }, 6000);
-    });
+window.addEventListener('load', function() {
+    // 1. Dapatkan elemen loader dan konten
+    const loaderWrapper = document.getElementById('loader-wrapper');
+    const mainContent = document.getElementById('main-content');
+
+    // 2. Tunda penghilangan selama 2 detik (misalnya)
+    setTimeout(function() {
+        // Sembunyikan loader
+        loaderWrapper.style.display = 'none';
+        
+        // Tampilkan konten utama
+        mainContent.style.display = 'block'; 
+        
+    }, 2000); // Durasi tunda dalam milidetik (2000ms = 2 detik)
+});
+
+
+window.addEventListener('load', function() {
+    // Dapatkan elemen loader dan konten
+    const loaderWrapper = document.getElementById('loader-wrapper');
+    const mainContent = document.getElementById('main-content');
+
+    // Sembunyikan loader segera setelah semua aset selesai dimuat
+    loaderWrapper.style.display = 'none';
+    
+    // Tampilkan konten utama
+    mainContent.style.display = 'block'; 
+    
+    // Opsional: Jika Anda ingin efek transisi lebih halus,
+    // Anda bisa menggunakan class CSS dan properti opacity/transition.
+});
